@@ -1,6 +1,10 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 const Agents = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="container-lg">
       <h1 className="mt-5">Here is info About Agents</h1>
@@ -42,7 +46,7 @@ const Agents = () => {
           common defensive spots to force enemies into the open. On defense, controllers can smoke and/or use crowd
           control on entryways to delay or discourage the enemy team from moving forward.</p>
       </div>
-      <button className="btn btn-primary mb-5">Back to Home</button>
+      <button className="btn btn-primary mb-5" onClick={() => navigate('/')}>Back to Home</button>
     </div>
   );
 };

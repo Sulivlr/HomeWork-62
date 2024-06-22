@@ -36,6 +36,7 @@ const Home = () => {
           items or new agents.
         </p>
       </div>
+
       <button className="btn btn-primary mb-5" onClick={() => navigate('/Modes')}>Next Page</button>
     </div>
 

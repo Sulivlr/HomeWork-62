@@ -1,7 +1,9 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 const Modes = () => {
 
+  const navigate = useNavigate();
 
   return (
     <div className="container-lg">
@@ -38,7 +40,7 @@ const Modes = () => {
           number associated to their rank allowing players to have a metric in which they can compare how they rank up
           to others at their level.[19]</p>
       </div>
-      <button className="btn btn-primary mb-5">Next Page</button>
+      <button className="btn btn-primary mb-5" onClick={() => navigate('/Agents')}>Next Page</button>
     </div>
   );
 };
